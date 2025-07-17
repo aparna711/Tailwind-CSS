@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script>
+    // JavaScript for toggling mobile menu
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="font-sans leading-relaxed text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-xl font-bold">👩‍💻 Aparna</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:text-blue-600">Home</a>
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#projects" class="hover:text-blue-600">Projects</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+        <div class="md:hidden">
+          <button onclick="toggleMenu()" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+      <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#about" class="block py-2 text-gray-700 hover:text-blue-600">About</a>
+      <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 text-center px-4">
+    <img src="photo.jpg" alt="Avatar" class="rounded-full bg- w-40 h-42 object-cover size-48 shadow-xl " />
+    
+    <h1 class="text-3xl font-bold mt-4">Aparna Hari Nair</h1>
+    <p class="text-purple-700 text-xl m-2">Web Developer | Problem Solver</p>
+    <p class="tagline italic font-semibold text-gray-600 "></p>
+    
+    <!-- <a href="#" download class="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+      Download Resume
+    </a> -->
+   
+
+ <a href="RESUME.pdf" download
+   class="mt-2 relative inline-flex items-center justify-center p-0.5
+          overflow-hidden text-sm font-medium rounded-lg group
+          focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800
+          dark:text-white">
+  <span class="absolute inset-0 rounded-lg bg-gradient-to-br from-purple-600 to-blue-500"></span>
+  <span class="relative px-5 py-2.5 transition-all ease-in duration-75
+               bg-white dark:bg-gray-900 rounded-md
+               text-gray-900 group-hover:bg-opacity-0 group-hover:text-white">
+    Download Resume
+  </span>
+</a>
+
+ <section class="bg-slate-100 dark:bg-slate-800 py-6 px-6 m-4 rounded-md">
+  <figure class="flex flex-col md:flex-row items-center max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+    
+    <!-- Text Content -->
+    <div class="p-6 md:p-10 text-center md:text-left space-y-4 bg-gradient-to-br from-blue-100 to-purple-100 text-center px-4">
+      <blockquote>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-purple-700">
+          Turning Ideas into Interactive Experiences
+        </h1>
+        <p class="text-base md:text-lg text-gray-700 dark:text-gray-300 mt-4">
+          Hi, I’m Aparna — a creative front-end developer with a love for vibrant designs and smooth user journeys.
+        </p>
+      </blockquote>
+      
+      <!-- Author Info -->
+      <figcaption class="mt-6 font-medium">
+        <div class="text-sky-500 text-xl dark:text-sky-400">Aparna</div>
+        <div class="text-slate-600 dark:text-slate-400">An Aspiring Web Developer</div>
+      </figcaption>
+    </div>
+  </figure>
+
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-white px-6 bg-gradient-to-br from-green-100 to-red-100">
+    <h2 class="text-2xl font-bold mb-6 text-center">About Me</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <p>
+          I'm Aparna, a passionate web developer with a strong background in computer science.
+          I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+        </p>
+        <p class="mt-4">
+          My interests include coding, UI design, and continuously learning new technologies.
+          I'm eager to contribute to real-world projects and grow as a full-stack developer.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Skills</h3>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Tailwind CSS, Bootstrap</li>
+          <li>React, Node.js (basics)</li>
+          <li>Git & GitHub</li>
+        </ul>
+        <h3 class="text-xl font-semibold mt-6 mb-2">Education</h3>
+        <ul class="space-y-2">
+          <li class="bg-gray-100 p-3 rounded">BSc Computer Science – 2025</li>
+          <li class="bg-gray-100 p-3 rounded">HSC – 2022</li>
+          <li class="bg-gray-100 p-3 rounded">SSLC – 2020</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gradient-to-br from-purple-100 to-yellow-100 px-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <!-- Project Card -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition md:w-90">
+        <img src="photo1.png" class="rounded mb-4 md:h-72 object-cover" alt="Project 1" />
+        <h3 class="text-xl font-semibold">Project One</h3>
+        <p class="text-sm mt-2">A simple portfolio website using HTML & Tailwind CSS.</p>
+        <a href="https://github.com/aparna711/MainFlow-MERN-STACK.git" class="text-blue-600 mt-2 inline-block">View GitHub</a>
+      </div>
+      <!-- Repeat -->
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition md:w-90">
+        <img src="photo2.png" class="rounded mb-4 md:h-72 object-cover" alt="Project 2" />
+        <h3 class="text-xl font-semibold">Project Two</h3>
+        <p class="text-sm mt-2">A Movie Website TMDB API and React JS.</p>
+        <a href="https://github.com/aparna711/MainFlow-MERN-STACK.git" class="text-blue-600 mt-2 inline-block">View GitHub</a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg hover:scale-105 transition md:w-90">
+        <img src="photo3.png" class="rounded mb-4 md:h-72  object-cover" alt="Project 3" />
+        <h3 class="text-xl font-semibold">Project Three</h3>
+        <p class="text-sm mt-2">A AI powered Resume Generator build by integrating Gemini API.</p>
+        <a href="https://github.com/aparna711/MainFlow-MERN-STACK.git" class="text-blue-600 mt-2 inline-block">View GitHub</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+ 
+<section id="contact" class="py-12 bg-gradient-to-br from-purple-100 to-yellow-100">
+  <div class="max-w-xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Me</h2>
+    <form class="space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-md">
+      <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-md">
+      <textarea placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded-md" rows="5"></textarea>
+      <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send Message</button>
+    </form>
+
+    <!-- 🌐 Social Media Icons -->
+    <div class="flex justify-center space-x-6 mt-8 text-2xl">
+      <a href="https://github.com/aparna711" target="_blank" class="text-gray-600 hover:text-black">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/aparna-hari-nair" target="_blank" class="text-blue-700 hover:text-blue-900">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:aparnaharinair908@gmail.com" class="text-red-500 hover:text-red-700">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://twitter.com/yourusername" target="_blank" class="text-sky-500 hover:text-sky-700">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-100 text-sm sticky bottom-0 w-full">
+    &copy; 2025 Aparna Hari Nair. All rights reserved.
+  </footer>
+<!-- TypeIt for Tagline -->
+   <script>
+    new TypeIt(".tagline", {
+      strings: ["\"A MERN STACK DEVELOPER.\"", "\"Building beautiful, useful things for the web.\""],
+      speed: 50,
+      breakLines: false,
+      loop: true,
+      deleteSpeed: 40,
+      nextStringDelay: 1500
+    }).go();
+  </script>
+
+</body>
+</html>
